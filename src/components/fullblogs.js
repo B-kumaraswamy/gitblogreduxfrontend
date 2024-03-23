@@ -7,7 +7,7 @@ function BlogPage() {
    const [blog, setBlog] = useState([])
    useEffect(() => {
     const getBlog = async() => {
-        const url = `http://localhost:8080/blogs/${id}`
+        const url = `https://gitblogreduxbackend.onrender.com/blogs/${id}`
         const headers = {
             'Content-Type' : 'application/json'
         }

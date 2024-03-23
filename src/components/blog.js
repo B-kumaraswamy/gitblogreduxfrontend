@@ -8,8 +8,10 @@ function BlogComponent() {
     const [array, setArray] = useState([])
    useEffect(()=> {
     try {
+        console.log("process.env value ", process.env)
+        console.log("backend url ", process.env.BACKEND_URL)
         const getBlogs = async() => {
-            const url = 'http://localhost:8080/blogs'
+            const url = "https://gitblogreduxbackend.onrender.com/blogs"
             const headers = {
                 'Content-Type' : 'application/json'
             }

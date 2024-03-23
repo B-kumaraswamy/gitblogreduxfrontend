@@ -32,7 +32,7 @@ const dispatch = useDispatch()
 const onSubmit = async() => {
 
     setMessage('')
-    const url = 'http://localhost:8080/publish'
+    const url = "https://gitblogreduxbackend.onrender.com/publish"
     const body = {
         id : id,
         title : title ,
